@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Change-the-text</title>
+</head>
+<body>
+	<h2>Change of text</h2>
+
+	<p id="text-changer">A Text.</p>
+
+	<button type="button" onclick="Text_change()">Click me to change the text!</button>
+
+	<script>
+		function Text_change() {
+  		document.getElementById("text-changer").innerHTML = "Text changed.";
+	}
+</script>
+</body>
+</html>
