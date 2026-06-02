@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>light-bulb</title>
+	<style>
+		h1{
+			text-align: center;
+		}
+		img{
+			width: 400px;
+			height: 500px;
+			display: block;
+  			margin-left: auto;
+  			margin-right: auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>Toogle light</h1>
+	<img src="D:\\Ronick Shrestha\\img\\bulb-without-light.jpg" id="light">
+	<center>
+	<button type="button" onclick="light_on()">Click to turn on the light</button>
+	<button type="button" onclick="light_off()">Click to turn off the light</button>
+	</center>
+	<script>
+		function light_on() {
+			document.getElementById('light').src='D:\\Ronick Shrestha\\img\\bulb-with-light.jpg'
+		}
+		function light_off() {
+			document.getElementById('light').src='D:\\Ronick Shrestha\\img\\bulb-without-light.jpg'
+		}
+	</script>
+</body>
+</html>

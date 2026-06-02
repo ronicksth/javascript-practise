@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Appear text</title>
+</head>
+<body>
+	<h1>Hide the written text</h1>
+	<p>Hi World</p>
+	<p id="appear" style="display:none;">Hello World</p>
+	<button type="button" onclick="AppearText()">click me to appear!</button>
+	<script>
+		function AppearText() {
+			document.getElementById('appear').style.display= 'block';
+		}
+	</script>
+</body>
+</html>
