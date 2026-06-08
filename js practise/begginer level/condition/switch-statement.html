@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Switch Statement</title>
+	<style>
+		body{
+			text-align: center;
+		}
+		input{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Switch Statement</h1>
+	<p>
+		if your age is less then 18 enter=0<br>
+		if your age id more then 17 enter=1
+	</p>
+	<input type="text" placeholder="enter the true value" id="input"><br>
+	<button type="button" onclick="processor()">Submit!</button>
+	<p id="output"></p>
+	<script>
+		function processor() {
+			let x = document.getElementById('input').value
+		switch (x) {
+		case "0":
+			text = "You cannot drive"
+			break;
+		case "1":
+			text = "You can drive"
+			break;
+		default:
+			text = "No value founded"
+		}
+		document.getElementById('output').innerHTML = text ;
+		}
+		
+	</script>
+</body>
+</html>
