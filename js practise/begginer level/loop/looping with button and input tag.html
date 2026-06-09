@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>trying</title>
+	<style>
+		body{
+			text-align: center;
+		}
+		input{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Looping with button and input tag[Experence]</h1>
+	<input type="text" placeholder="Input what u want to loop" id="textlooper"><br>
+	<input type="number" placeholder="Enter the amount to loop" id="inpnum"><br>
+	<button type="button" onclick="outputbutton()">Enter!</button>
+	<p id="output"></p>
+	<script>
+		function outputbutton() {
+			let x = document.getElementById('textlooper').value;
+			let y = document.getElementById('inpnum').value;
+			let z = "";
+			for (let i = 1; i <= y; i++) {
+				z += i +"."+ x + "<br>";
+			}
+			document.getElementById('output').innerHTML = z;
+		}
+	</script>
+</body>
+</html>
