@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>While loop</title>
+	<style>
+		body{
+			text-align: center;
+		}
+		input{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>While loop</h1>
+	<input type="text" placeholder="enter the text which you want to loop" id="looping"><br><br>
+	<input type="number" placeholder="enter the required amount to loop" id="loopamount"><br>
+	<button type="button" onclick="looper()">Enter!</button>
+	<p id="output"></p>
+	<script>
+		function looper() {
+			let w,x,y,z;
+			w = document.getElementById('looping').value;
+			x = document.getElementById('loopamount').value;
+			y = "";
+			z = 1;
+			while (z <= x){
+				y += z + "." + " " + w + "<br>";
+				z++
+			}
+			document.getElementById("output").innerHTML = y;
+		}
+	</script>
+</body>
+</html>
