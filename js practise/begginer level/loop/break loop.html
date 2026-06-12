@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Break Looping</title>
+</head>
+<body>
+
+    <h1>Break Loop Example</h1>
+    <p>Break the outer loop when i reaches 3.</p>
+
+    <input type="text" placeholder="thing to loop" id="looper"><br><br>
+
+    <input type="number" placeholder="inner loop amount" id="loopamount1"><br><br>
+
+    <input type="number" placeholder="outer loop amount" id="loopamount2"><br><br>
+
+    <button type="button" onclick="output()">Submit!</button>
+
+    <p id="ans"></p>
+
+    <script>
+        function output() {
+            let w, x, y, z;
+
+            w = document.getElementById("looper").value;
+            x = document.getElementById("loopamount1").value;
+            y = document.getElementById("loopamount2").value;
+
+            z = "";
+
+            loop1:
+            for (let j = 1; j < y; j++) {
+                for (let i = 1; i < x; i++) {
+
+                    if (i === 50) {
+                        break loop1;
+                    }
+
+                    z += i + " " + w + "<br>";
+                }
+            }
+
+            document.getElementById("ans").innerHTML = z;
+        }
+    </script>
+
+</body>
+</html>
