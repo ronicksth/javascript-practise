@@ -32,11 +32,11 @@
 
             loop1:
             for (let j = 1; j < y; j++) {
-                loop2:
+                loop2 :
                 for (let i = 1; i < x; i++) {
 
                     if (i === 50) {
-                        break loop1;
+                        continue loop1;
                     }
 
                     z += i + " " + w + "<br>";
